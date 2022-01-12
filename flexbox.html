@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .contener{
+            display: flex;
+            height: 500px;
+            border: 2px dotted green;
+            justify-content: center;
+            /* align-items: ; */
+        }
+        .box{
+            /* font-size: 3rem; */
+            
+            width: 200px;
+            border: 3px dashed gold;
+        }
+        #box-1{
+            order: 2;
+        }
+        #box-2{
+            order: 1;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>I am Flexibel fight now</h1>
+     <div class="contener">
+        <div class="box" id="box-1">BOX-1</div>
+        <div class="box" id="box-2">
+            <h3>BOX-2</h3>
+            <article class="blog">
+                <h4>Blog-1</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem molestiae excepturi labore quidem cumque dolor doloremque ipsa maxime ipsam aliquam libero tenetur obcaecati, velit commodi! Repudiandae nihil voluptatibus neque.</p>
+            </article>
+            <article class="blog">
+                <h4>Blog-2</h4>
+                <p>Cumque, laboriosam, praesentium ipsum labore maxime ut, doloremque est aspernatur deserunt id libero! Culpa, sequi ex sapiente officia praesentium, tenetur sint, laudantium unde ratione nisi eius voluptatum! Possimus, culpa delectus!</p>
+            </article>
+            <article class="blog">
+                <h4>Blog-3</h4>
+                <p>Dignissimos, repudiandae. Vitae minus voluptas animi dolores ducimus recusandae explicabo, ipsam sit magni, aliquam eius iste ab natus corporis itaque voluptate autem ullam ad atque perferendis earum! Asperiores, magni praesentium?</p>
+            </article>
+        </div>
+        <!-- <div class="box">BOX-3</div>
+        <div class="box">BOX-4</div> -->
+     </div>
+</body>
+</html>
